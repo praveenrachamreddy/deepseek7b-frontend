@@ -1,6 +1,6 @@
 export const getBotResponse = async (prompt) => {
 	try {
-		const response = await fetch("https://ollama-flask-route-praveen.apps.ocp4.imss.work/api/generate", {
+		const response = await fetch("http://ollama-flask-route-praveen.apps.ocp4.imss.work/api/generate", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ prompt }),
